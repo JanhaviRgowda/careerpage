@@ -1,0 +1,40 @@
+/* KodNest Premium Design System - Job Notification Tracker */
+:root {
+  --kn-bg: #F7F6F3;
+  --kn-accent: #8B0000;
+  --kn-accent-hover: #6d0000;
+  --kn-text: #1a1a1a;
+  --kn-text-muted: #5c5c5c;
+  --kn-border: #e0ddd8;
+  --kn-font-serif: 'Libre Baskerville', Georgia, serif;
+  --kn-font-sans: 'Source Sans 3', system-ui, sans-serif;
+  --kn-nav-height: 3.5rem;
+  --kn-space: 1.5rem;
+  --kn-radius: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--kn-bg);
+  color: var(--kn-text);
+  font-family: var(--kn-font-sans);
+  line-height: 1.5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
