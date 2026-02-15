@@ -1,0 +1,72 @@
+/* KodNest Premium - Settings */
+
+.page {
+  padding: 2rem 0 4rem;
+}
+
+.title {
+  font-family: var(--kn-font-serif);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--kn-text);
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.intro {
+  font-family: var(--kn-font-sans);
+  font-size: 1rem;
+  color: var(--kn-text-muted);
+  margin: 0 0 2.5rem;
+}
+
+.form {
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.label {
+  font-family: var(--kn-font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--kn-text);
+}
+
+.input,
+.select {
+  font-family: var(--kn-font-sans);
+  font-size: 1rem;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--kn-border);
+  border-radius: var(--kn-radius);
+  background: var(--kn-bg);
+  color: var(--kn-text);
+}
+
+.input::placeholder {
+  color: var(--kn-text-muted);
+  opacity: 0.8;
+}
+
+.select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%235c5c5c' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2rem;
+}
+
+.input:disabled,
+.select:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

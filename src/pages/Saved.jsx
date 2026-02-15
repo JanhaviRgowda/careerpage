@@ -1,5 +1,10 @@
-import PlaceholderPage from '../components/PlaceholderPage'
+import EmptyState from '../components/EmptyState'
 
 export default function Saved() {
-  return <PlaceholderPage title="Saved" />
+  return (
+    <EmptyState
+      title="Saved jobs"
+      message="Jobs you save will appear here. No items yet."
+    />
+  )
 }
