@@ -2,14 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Notification Tracker | KodNest Premium</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+    <title>Job Notification Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body class="kn-body">
+    <!-- Navigation Bar -->
+    <nav class="kn-nav">
+      <div class="kn-nav__brand">Job Notification Tracker</div>
+      <button class="kn-nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="kn-nav__toggle-icon"></span>
+        <span class="kn-nav__toggle-icon"></span>
+        <span class="kn-nav__toggle-icon"></span>
+      </button>
+      <ul class="kn-nav__list">
+        <li class="kn-nav__item">
+          <a href="/dashboard" class="kn-nav__link" data-route="/dashboard">Dashboard</a>
+        </li>
+        <li class="kn-nav__item">
+          <a href="/saved" class="kn-nav__link" data-route="/saved">Saved</a>
+        </li>
+        <li class="kn-nav__item">
+          <a href="/digest" class="kn-nav__link" data-route="/digest">Digest</a>
+        </li>
+        <li class="kn-nav__item">
+          <a href="/settings" class="kn-nav__link" data-route="/settings">Settings</a>
+        </li>
+        <li class="kn-nav__item">
+          <a href="/proof" class="kn-nav__link" data-route="/proof">Proof</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="kn-main" id="app-content">
+      <!-- Placeholder content will be rendered here by router -->
+    </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
+
